@@ -6,10 +6,12 @@
 </head>
 <body>
 
-<form method="POST" action="/login/">
-    {{ form.email.label }}
-    {{ form.email_name    }}
-
+<{% if error %}
+<div> {{ error }}</div>
+{% endif %}
+<form method="POST" action="/login">
+    {{ form.email_login.label }}
+    {{ form.email_login }}
     {{ form.password.label }}
     {{ form.password }}
     <input type="submit" value="Go">
