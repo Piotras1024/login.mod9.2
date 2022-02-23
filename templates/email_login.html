@@ -10,6 +10,7 @@
 <div> {{ error }}</div>
 {% endif %}
 <form method="POST" action="/login">
+    {{ form.csrf_token }}
     {{ form.email_login.label }}
     {{ form.email_login }}
     {{ form.password.label }}

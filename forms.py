@@ -7,5 +7,5 @@ class LoginForm(FlaskForm):
     password = PasswordField('password', validators=[DataRequired()])
 
 class EmailPasswordForm(FlaskForm):
-    email_name = StringField('spokoj@gmail.com', validators=[DataRequired(), Email()])
-    password = StringField('okej', valdators=[DataRequired()])
+    email_login = StringField('spokoj@gmail.com', validators=[DataRequired(), Email()])
+    password = StringField('okej', validators=[DataRequired()])
